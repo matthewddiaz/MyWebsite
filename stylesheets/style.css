@@ -1,38 +1,38 @@
 div1 {
-    width: 250px;
-    height: 300px;
-    -webkit-animation: myfirst 10s; /* Chrome, Safari, Opera */
-    text-align:center;
-    font-size:100%;
-    font: 100 25px 'Pacifico', Ariel, sans-serif;
-    animation: myfirst 10s;
-    animation-iteration-count: infinite;
+  width: 250px;
+  height: 300px;
+  -webkit-animation: myfirst 10s; /* Chrome, Safari, Opera */
+  text-align:center;
+  font-size:100%;
+  font: 100 25px 'Pacifico', Ariel, sans-serif;
+  animation: myfirst 10s;
+  animation-iteration-count: infinite;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes myfirst {
-    0%     {color: orange;}
-    12.5%  {color: yellow;}
-    25%	   {color: aqua;} 	
-    37.5%  {color: blue;}
-    50%	   {color: black;}
-    62.5%  {color: #ADD8E6;}
-    75%	   {color: red;}
-    87.5%  {color: #FFA07A;}
-    100%   {color: green;}
+  0%     {color: orange;}
+  12.5%  {color: yellow;}
+  25%	   {color: aqua;}
+  37.5%  {color: blue;}
+  50%	   {color: black;}
+  62.5%  {color: #ADD8E6;}
+  75%	   {color: red;}
+  87.5%  {color: #FFA07A;}
+  100%   {color: green;}
 }
 
 /* Standard syntax */
 @keyframes myfirst {
-    0%     {color: orange;}
-    12.5%  {color: yellow;}
-    25%	   {color: aqua;} 	
-    37.5%  {color: blue;}
-    50%	   {color: black;}
-    62.5%  {color: #ADD8E6;}
-    75%	   {color: red;}
-    87.5%  {color: #FFA07A;}
-    100%   {color: green;}
+  0%     {color: orange;}
+  12.5%  {color: yellow;}
+  25%	   {color: aqua;}
+  37.5%  {color: blue;}
+  50%	   {color: black;}
+  62.5%  {color: #ADD8E6;}
+  75%	   {color: red;}
+  87.5%  {color: #FFA07A;}
+  100%   {color: green;}
 }
 
 /*The above section is the animation for matthew diaz to change color! */
@@ -43,7 +43,7 @@ h1{
 	float:left;
 	background: #87CEFA;
 	margin:0px;
-        height:40px;
+  height:40px;
 }
 /*h1 is used for the Welcome/Courses/Projects at the top of the page*/
 
@@ -62,16 +62,16 @@ nav li{
 
 nav a:link, a:visited{ /*the a:link and a:visited specify when the a should follow the text below*/
 	display:block; /* displa:block is for making the list vertical */
-	width:120px; 
+	width:120px;
 	height:30px;
 	background-color:yellowgreen;   /* Change background color of all the a which are links*/
 	color:white;  /*color changes the color of the text */
 	text-decoration:none; /*remove underline*/
-	text-align: center; 
+	text-align: center;
 	font-weight:bold;
 	text-transform: uppercase;
 	padding: 5px; /*adding space between tabs */
-	
+
 }
 
 nav a:hover, a:active{ /*when a  is active the background color changes! */
@@ -81,42 +81,42 @@ nav a:hover, a:active{ /*when a  is active the background color changes! */
 
 
 div3{
-    position: fixed;
-    top: 10px;
-    right: 10px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
 /*div3 is for the matthew diaz and git/linkin to be fixed on the top right of the page*/
 
 div3 img {
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
 div3 img:hover {
-    opacity: 1.0;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
 } /*In div3 the links for git/linkin are images and I wanted the images to be transparent and to have hover affect*/
 
 /*div is for the boxs that describe each paragraph! */
 div{
-background-color:#F1EDBB;/*background color of the whole box*/
-width:600px;/*with of the box*/
-padding:25px; /*allows for the text to have white space*/
-border:1.5px solid black; /*includes the size of the border and the color*/
-margin:auto;/*margin is the distance from the left and top of the page*/
-text-align:center;
+  background-color:#F1EDBB;/*background color of the whole box*/
+  width:600px;/*with of the box*/
+  padding:25px; /*allows for the text to have white space*/
+  border:1.5px solid black; /*includes the size of the border and the color*/
+  margin:auto;/*margin is the distance from the left and top of the page*/
+  text-align:center;
 }
 
 /*div4 is the css code for the box in welcome page*/
 div4{
-background-color:#F1EDBB;/*background color of the whole box*/
-width:800px;/*with of the box*/
-padding:25px; /*allows for the text to have white space*/
-border:1.5px solid black; /*includes the size of the border and the color*/
-left: 20%;
-position: absolute;
-top: 25%;
-text-align:left;
+  background-color:#F1EDBB;/*background color of the whole box*/
+  width:800px;/*with of the box*/
+  padding:25px; /*allows for the text to have white space*/
+  border:1.5px solid black; /*includes the size of the border and the color*/
+  left: 20%;
+  position: absolute;
+  top: 25%;
+  text-align:left;
 }
 
 div5{
@@ -128,11 +128,11 @@ div5{
 /*On project page. This is for click of image text customization. */
 h5{
 	font-style: italic;
-	bottom: 0; 
+	bottom: 0;
 	color:#3366FF;
 }
 
-
+/*The h6 is for the fixed creator text at the bottom of the page*/
 h6{
 	position: fixed;
 	bottom: 0;
@@ -140,7 +140,3 @@ h6{
 	color:blue;
 	font-style: oblique;
 }
-/*The h6 is for the fixed creator text at the bottom of the page*/
-
-
-
