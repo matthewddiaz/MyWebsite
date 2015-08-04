@@ -1,53 +1,62 @@
-div1 {
-  width: 250px;
-  height: 300px;
-  -webkit-animation: myfirst 10s; /* Chrome, Safari, Opera */
-  text-align:center;
-  font-size:100%;
-  font: 100 25px 'Pacifico', Ariel, sans-serif;
-  animation: myfirst 10s;
+/*class for name logo and git/linked-in link */
+.git-linkedIn-logo-box {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  height: 46px;
+  width: 232px;
+}
+
+.git-linkedIn-logo-box img {
+  opacity: 0.4;
+	width:42px;
+	height:42px;
+	border:0;
+}
+
+.git-linkedIn-logo-box img:hover {
+  opacity: 1.0;
+}
+
+/* CSS for logo Matthew Diaz rainbow color effect */
+@-webkit-keyframes colorAnimation {
+  0%     {color: orange;}
+  12.5%  {color: yellow;}
+  25%	   {color: aqua;}
+  37.5%  {color: blue;}
+  50%	   {color: black;}
+  62.5%  {color: #ADD8E6;}
+  75%	   {color: red;}
+  87.5%  {color: #FFA07A;}
+  100%   {color: green;}
+}
+
+.git-linkedIn-logo-box .logo-rainbow-box {
+  height: 100%;
+  -webkit-animation: colorAnimation 10s;
+  text-align: center;
+  font-size: 25px;
+  font-family: Pacifico, Ariel;
   animation-iteration-count: infinite;
+  float: right;
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes myfirst {
-  0%     {color: orange;}
-  12.5%  {color: yellow;}
-  25%	   {color: aqua;}
-  37.5%  {color: blue;}
-  50%	   {color: black;}
-  62.5%  {color: #ADD8E6;}
-  75%	   {color: red;}
-  87.5%  {color: #FFA07A;}
-  100%   {color: green;}
+/*sytle for signature located bottom-right of the page*/
+.signature{
+	position: fixed;
+	bottom: 0;
+	right:5px;
+	color:blue;
+	font-style: oblique;
 }
 
-/* Standard syntax */
-@keyframes myfirst {
-  0%     {color: orange;}
-  12.5%  {color: yellow;}
-  25%	   {color: aqua;}
-  37.5%  {color: blue;}
-  50%	   {color: black;}
-  62.5%  {color: #ADD8E6;}
-  75%	   {color: red;}
-  87.5%  {color: #FFA07A;}
-  100%   {color: green;}
-}
-
-/*The above section is the animation for matthew diaz to change color! */
-
-
-
+/*h1 is used for the Welcome/Courses/Projects at the top of the page*/
 h1{
 	float:left;
 	background: #87CEFA;
 	margin:0px;
   height:40px;
 }
-/*h1 is used for the Welcome/Courses/Projects at the top of the page*/
-
-
 
 nav ul{
 	/*style in html file allows for css code in html files!! */
@@ -60,6 +69,7 @@ nav li{
 	float:left;
 }
 
+/*the nav is used for three links which are home,courses, and projects*/
 nav a:link, a:visited{ /*the a:link and a:visited specify when the a should follow the text below*/
 	display:block; /* displa:block is for making the list vertical */
 	width:120px;
@@ -74,69 +84,67 @@ nav a:link, a:visited{ /*the a:link and a:visited specify when the a should foll
 
 }
 
-nav a:hover, a:active{ /*when a  is active the background color changes! */
+/*when a  is active the background color changes */
+nav a:hover, a:active{
 	background-color:green;
 }
-/*the nav is used for three links which are home,courses, and projects*/
 
 
-div3{
-  position: fixed;
-  top: 10px;
-  right: 10px;
-}
-/*div3 is for the matthew diaz and git/linkin to be fixed on the top right of the page*/
-
-div3 img {
-  opacity: 0.4;
-  filter: alpha(opacity=40); /* For IE8 and earlier */
-}
-
-div3 img:hover {
-  opacity: 1.0;
-  filter: alpha(opacity=100); /* For IE8 and earlier */
-} /*In div3 the links for git/linkin are images and I wanted the images to be transparent and to have hover affect*/
-
-/*div is for the boxs that describe each paragraph! */
-div{
-  background-color:#F1EDBB;/*background color of the whole box*/
-  width:600px;/*with of the box*/
-  padding:25px; /*allows for the text to have white space*/
-  border:1.5px solid black; /*includes the size of the border and the color*/
-  margin:auto;/*margin is the distance from the left and top of the page*/
-  text-align:center;
-}
-
-/*div4 is the css code for the box in welcome page*/
-div4{
-  background-color:#F1EDBB;/*background color of the whole box*/
-  width:800px;/*with of the box*/
-  padding:25px; /*allows for the text to have white space*/
-  border:1.5px solid black; /*includes the size of the border and the color*/
+/*class profile-box is the css code for the box in welcome page*/
+.profile-box{
+  background-color:#F1EDBB;
+  width:800px;
+  padding:25px;
+  border:1.5px solid black;
   left: 20%;
   position: absolute;
   top: 25%;
   text-align:left;
 }
 
-div5{
-	font-size:130%;
-	font-weight: bold;
+.profile-box img{
+  width:150px;
+  height:150px;
+  padding:10px;
+  float: right;
 }
-/* div5 is for the first sentence in each box which will be larger and have bold text!*/
+
+/*---------------------------------------------------------------------------*/
+/*                      Css for courses.html                                 */
+/*---------------------------------------------------------------------------*/
+
+.schedule-description-box{
+	width: 100%;
+	height: 372px;
+	background-color: aliceblue;
+	border: 1px solid aquamarine;
+}
+
+.schedule-description-box a{
+	text-decoration: none;
+  color: black;
+}
+
+/*---------------------------------------------------------------------------*/
+/*                      Css for projects.html                                */
+/*---------------------------------------------------------------------------*/
+
+.project-description-box{
+	width: 100%;
+  height: 250px;
+  background-color: lavenderblush;
+  border-radius: 30px;
+}
+.project-description-box img{
+	width:180px;
+	height:200px;
+	padding:5px;
+	float: right;
+}
 
 /*On project page. This is for click of image text customization. */
 h5{
 	font-style: italic;
 	bottom: 0;
 	color:#3366FF;
-}
-
-/*The h6 is for the fixed creator text at the bottom of the page*/
-h6{
-	position: fixed;
-	bottom: 0;
-	right:5px;
-	color:blue;
-	font-style: oblique;
 }
